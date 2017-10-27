@@ -14,19 +14,32 @@
             </ul>
         </li>
         <li class="dropdown">
-            <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> 菜单 <span class="caret"></span></a>
+            <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> 模块管理 <span class="caret"></span></a>
             <ul role="menu" class="dropdown-menu">
-                <li><a href="">菜单列表</a>
+                <li><a href="{{url('admin/menu')}}">栏目管理</a>
                 </li>
-                <li><a href="">菜单列表</a>
+                <li><a href="{{url('admin/menu/add')}}">新增栏目</a>
                 </li>
-                <li><a href="">菜单列表</a>
+                <li><a href="">文章管理</a>
                 </li>
-                <li><a href="">M菜单列表</a>
+                <li><a href="">附件管理</a>
                 </li>
             </ul>
         </li>
         <li class="dropdown">
+            <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> 插件管理 <span class="caret"></span></a>
+            <ul role="menu" class="dropdown-menu">
+                <li><a href="">广告投放</a>
+                </li>
+                {{--<li><a href="">菜单列表</a>
+                </li>
+                <li><a href="">菜单列表</a>
+                </li>
+                <li><a href="">菜单列表</a>
+                </li>--}}
+            </ul>
+        </li>
+        {{--<li class="dropdown">
             <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> 菜单 <span class="caret"></span></a>
             <ul role="menu" class="dropdown-menu">
                 <li><a href="">菜单列表</a>
@@ -38,20 +51,7 @@
                 <li><a href="">菜单列表</a>
                 </li>
             </ul>
-        </li>
-        <li class="dropdown">
-            <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> 菜单 <span class="caret"></span></a>
-            <ul role="menu" class="dropdown-menu">
-                <li><a href="">菜单列表</a>
-                </li>
-                <li><a href="">菜单列表</a>
-                </li>
-                <li><a href="">菜单列表</a>
-                </li>
-                <li><a href="">菜单列表</a>
-                </li>
-            </ul>
-        </li>
+        </li>--}}
 
     </ul>
     <ul class="nav navbar-top-links navbar-right">

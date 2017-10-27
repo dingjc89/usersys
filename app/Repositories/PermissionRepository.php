@@ -10,8 +10,9 @@ namespace App\Repositories;
 
 use App\Models\Permission;
 use DB;
+use App\Repositories\Base\BaseRepository;
 
-class PermissionRepository
+class PermissionRepository extends BaseRepository
 {
     public function getAll()
     {
@@ -44,8 +45,9 @@ class PermissionRepository
      * @param $permissionName
      * @return bool
      */
-    public function isPermission($userId, $table, $permissionName)
+    public function isPermission($table, $permissionName)
     {
+        $userId = 1;//测试，当前用户id
         $query = DB::table('permissions')->where('name',$permissionName)->where('table',$table);
         $query = $query->join('role_permission','permissions.permission_id','=','role_permission.permission_id');
         $query = $query->join('user_role','user_role.role_id','=','role_permission.role_id');

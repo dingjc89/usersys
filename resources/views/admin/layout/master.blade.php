@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{csrf_token()}}">
-    <title>管理后台 - 首页</title>
+    <title>后台管理 - 首页</title>
     @include('admin.layout.header')
 </head>
 
@@ -30,7 +30,7 @@
                     <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
                         <i class="fa fa-reorder"></i>
                     </button>
-                    <a href="#" class="navbar-brand">Hplus</a>
+                    <a href="#" class="navbar-brand">D-CMS</a>
                 </div>
             @include('admin.layout.menu')
             </nav>

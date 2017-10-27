@@ -19,18 +19,22 @@ Route::group(['prefix'=>'admin','namespace'=>'Admin'],function(){
 
 Route::group(['prefix'=>'admin','namespace'=>'Admin','middleware'=>'FilterView'],function(){
     //  首页
-   Route::get('home','HomeController@index');
-   //   用户
-   Route::get('user','UserController@index');
-   Route::get('user/add','UserController@add');
-   Route::post('user/store','UserController@store');
-   Route::get('user/edit/{id}','UserController@edit')->where(['id'=>'[0-9]+']);
-   Route::post('user/del','UserController@del');
-   //   角色
-   Route::get('role','RoleController@index');
-   Route::get('role/add/{id?}','RoleController@add');
-   Route::post('role/store','RoleController@store');
-   Route::post('role/del','RoleController@del');
-   Route::get('role/edit/{id}','RoleController@edit')->where(['id'=>'[0-9]+']);
-   Route::post('role/update/{id}','RoleController@update')->where(['id'=>'[0-9]+']);
+    Route::get('home','HomeController@index');
+    //   用户
+    Route::get('user','UserController@index');
+    Route::get('user/add','UserController@add');
+    Route::post('user/store','UserController@store');
+    Route::get('user/edit/{id}','UserController@edit')->where(['id'=>'[0-9]+']);
+    Route::post('user/del','UserController@del');
+    //   角色
+    Route::get('role','RoleController@index');
+    Route::get('role/add/{id?}','RoleController@add');
+    Route::post('role/store','RoleController@store');
+    Route::post('role/del','RoleController@del');
+    Route::get('role/edit/{id}','RoleController@edit')->where(['id'=>'[0-9]+']);
+    Route::post('role/update/{id}','RoleController@update')->where(['id'=>'[0-9]+']);
+    //   栏目
+    Route::get('menu','MenuController@index');
+    Route::get('menu/add','MenuController@add');
+    Route::post('menu/store','MenuController@store');
 });
