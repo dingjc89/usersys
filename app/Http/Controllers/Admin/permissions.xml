@@ -1,0 +1,42 @@
+<module>
+	<permissions>
+		<permission name="add" desc="新增" table="user">
+		</permission>
+		<permission name="edit" desc="编辑" table="user">
+		</permission>
+		<permission name="del" desc="删除" table="user">
+		</permission>
+		<permission name="view" desc="查看" table="user">
+		</permission>
+	</permissions>
+	<fields>
+		<filed name="name" desc="帐号" edit="1" view="1" table="user">
+		</filed>
+		<filed name="sex" desc="性别" edit="1" view="1" table="user">
+		</filed>
+		<filed name="email" desc="邮箱" edit="1" view="1" table="user">
+		</filed>
+		<filed name="addr" desc="地址" edit="1" view="1" table="user">
+		</filed>
+	</fields>
+	<permissions>
+		<permission name="add" desc="新增" table="role">
+		</permission>
+		<permission name="edit" desc="编辑" table="role">
+		</permission>
+		<permission name="del" desc="删除" table="role">
+		</permission>
+		<permission name="view" desc="查看" table="role">
+		</permission>
+	</permissions>
+	<fields>
+		<filed name="name" desc="帐号" edit="1" view="1" table="role">
+		</filed>
+		<filed name="sex" desc="性别" edit="1" view="1" table="role">
+		</filed>
+		<filed name="email" desc="邮箱" edit="1" view="1" table="role">
+		</filed>
+		<filed name="addr" desc="地址" edit="1" view="1" table="role">
+		</filed>
+	</fields>
+</module>
